@@ -26,7 +26,5 @@ router.route("/ver-adoptante").get((req, res, next) => {
   });
 });
 
-
-
 module.exports = router;
 
