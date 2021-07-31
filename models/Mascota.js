@@ -33,7 +33,8 @@ let mascotaSchema = new Schema(
 
 mascotaSchema.methods.setFotoUrl = function setFotoUrl(filename){
   const { host, port } = appConfig
-  this.foto = `${host}:${port}/public/${filename}`
+  // this.foto = `${host}:${port}/public/${filename}`
+  this.foto = `https://secret-savannah-77380.herokuapp.com/public/${filename}`
 }
 
 module.exports = mongoose.model("Mascota", mascotaSchema);
