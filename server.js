@@ -23,7 +23,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(cors());
-app.use('/public', express.static(`${__dirname}/storage/imgs`))
 app.use('/mascotas', mascotaRoute)
 app.use('/adopta', adoptaRoute)
 // Passport middleware
